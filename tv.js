@@ -26,3 +26,13 @@ document.addEventListener("keyup", e=>{
   
   
   })
+
+            document.getElementById("listaArticulos").addEventListener("click", ocultar_buscador);
+
+//ocultas lista de articulos
+
+function ocultar_buscador(){
+  listaArticulos.style.display = "none";
+  buscador.value = "";
+    
+}
