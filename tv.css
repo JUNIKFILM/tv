@@ -30,7 +30,7 @@ body::before {
 
 /* Search container */
 .search-container {
-  position: relative;
+  position: center;
   display: flex;
   justify-content: center;
   padding: 15px 10px;
