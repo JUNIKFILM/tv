@@ -88,6 +88,35 @@ li{
     display: none;
 }
 
+  .secciones-tv {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: 0;
+  max-height: 130px;
+  width: 300px;
+  border: 0px solid #0c0c0c;
+  display: flex;
+
+}
+
+.secciones-tv .sec{
+  text-align: center;
+  margin-right: 3px;
+
+}
+
+.sec{
+  background: #000000a4;
+  padding: 6px;
+  margin-top: 10px;
+  width: 100px;
+  border: 0%;
+  color: #f8bf03;
+  font-size: 17px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+
 *{margin:0;padding:0;box-sizing:border-box;text-transform:capitalize;}
 body{background:#00000000;}
 .heading{color:#444;font-size:40px;text-align:center;padding:10px;}
