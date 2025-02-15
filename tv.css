@@ -106,7 +106,7 @@ li {
   overflow-y: hidden;
   margin: 15px auto;
   padding: 0 10px;
-  max-width: 300px;
+  max-width: 400px;
   scrollbar-width: thin;
   scrollbar-color: #f8bf03 #000000a4;
   -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
