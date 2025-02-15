@@ -110,6 +110,7 @@ li {
   scrollbar-width: thin;
   scrollbar-color: #f8bf0300 #00000000;
   -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+  
 }
 
 .secciones-tv::-webkit-scrollbar {
