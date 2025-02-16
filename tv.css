@@ -243,3 +243,15 @@ li {
     min-width: 70px;
   }
 }
+
+.plyr button{
+  color:#e6f705
+}
+
+.plyr__control--overlaid{
+  background: #ffffff;
+}
+
+.plyr__volume input[type=range] {
+  color: #e6f705;
+}
