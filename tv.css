@@ -245,7 +245,7 @@ li {
 }
 
 .plyr button{
-  color:#e6f705
+  color:#f8bf03
 }
 
 .plyr__control--overlaid{
@@ -253,5 +253,5 @@ li {
 }
 
 .plyr__volume input[type=range] {
-  color: #e6f705;
+  color: #f8bf03;
 }
