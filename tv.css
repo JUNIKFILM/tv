@@ -101,23 +101,13 @@ li {
   margin: 15px auto;
   padding: 0 10px;
   max-width: 300px;
-  scrollbar-width: thin;
   
 }
 
-.secciones-tv::-webkit-scrollbar {
-  height: 6px;
-}
 
-.secciones-tv::-webkit-scrollbar-track {
-  background: #000000a4;
+.secciones-tv::-webkit-scrollbar{
+  width: 0;
 }
-
-.secciones-tv::-webkit-scrollbar-thumb {
-  background: #f8bf03;
-  border-radius: 10px;
-}
-
 .secciones-tv .sec {
   flex: 0 0 auto;
   text-align: center;
