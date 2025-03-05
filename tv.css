@@ -274,12 +274,15 @@ li {
   }
 }
 
+
 .plyr button {
   color: #f8bf03;
 }
 
 .plyr__control--overlaid {
-  background: rgba(248, 191, 3, 0.9);
+  background: rgba(255, 255, 255, 0.9);
+  width: 70px;
+  height: 70px;
 }
 
 .plyr__control--overlaid:hover {
