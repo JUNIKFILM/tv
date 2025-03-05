@@ -14,48 +14,40 @@ body {
   object-fit: cover !important;
   min-height: 100vh;
   font-family: Arial, sans-serif;
-  overflow-x: hidden;
 }
 
 body::before {
   z-index: -1;
   content: "";
   position: fixed;
-  top: 0;
+  top: 10;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(0 0 0 / 80%);
+  background-color: rgb(0 0 0 / 60%);
 }
 
 .search-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  position:relative;
   display: flex;
   justify-content: center;
-  padding: 20px;
-  z-index: 10;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+  padding: 100% 150px;
+  
 }
 
 input {
   background-color: #3636368c;
   width: 100%;
-  max-width: 400px;
-  padding: 15px 20px;
+  max-width: 100%;
+  padding: 10px;
+  padding-right: 50px;
   border-radius: 50px;
-  border: 1px solid rgba(248, 191, 3, 0.3);
+  border: 0;
   outline: none;
-  font-size: 1rem;
-  color: #fff;
-  transition: all 0.3s ease;
-}
+  font-size: 0.8rem;
+  color: #c2bfbf;
+  border: 1px solid #f8bf03;
 
-input:focus {
-  border-color: #f8bf03;
-  box-shadow: 0 0 10px rgba(248, 191, 3, 0.3);
 }
 
 #buscador::placeholder {
@@ -63,113 +55,106 @@ input:focus {
 }
 
 #listaArticulos {
-  position: fixed;
-  top: 80px;
+  position: absolute;
+  top: 60px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 400px;
+  max-width: 295px;
   margin: 0 auto;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.95);
-  z-index: 9;
+  padding: 8px;
+  background: #1f1e1eb0;
+  z-index: 8;
   overflow-y: auto;
   max-height: 70vh;
-  border-radius: 10px;
+  border-radius: 5px;
   display: none;
   list-style: none;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(248, 191, 3, 0.2);
 }
 
 #listaArticulos li a {
   display: block;
-  color: #fff;
-  padding: 15px;
+  color: #c2bfbf;
+  padding: 12px 8px;
   text-decoration: none;
-  transition: all 0.3s;
-  border-radius: 8px;
+  transition: background 0.3s;
 }
 
 #listaArticulos li a:hover {
-  background: rgba(248, 191, 3, 0.2);
-  transform: translateX(5px);
+  background: #e0dfdf3b;
 }
 
 #listaArticulos li a svg {
-  margin-right: 12px;
+  margin-right: 10px;
   vertical-align: middle;
-  color: #f8bf03;
+}
+
+li {
+  margin: 5px 0;
+}
+
+.filtro {
+  display: none;
 }
 
 .secciones-tv {
   display: flex;
   overflow-x: auto;
-  margin: 90px auto 20px;
-  padding: 0 20px;
-  max-width: 100%;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+  overflow-y: hidden;
+  margin: 15px auto;
+  padding: 0 10px;
+  max-width: 300px;
+  
 }
 
-.secciones-tv::-webkit-scrollbar {
-  height: 5px;
-}
 
-.secciones-tv::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
+.secciones-tv::-webkit-scrollbar{
+  width: 0;
 }
-
-.secciones-tv::-webkit-scrollbar-thumb {
-  background: #f8bf03;
-  border-radius: 50px;
-}
-
 .secciones-tv .sec {
   flex: 0 0 auto;
-  margin-right: 10px;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 12px 24px;
-  border: 1px solid rgba(248, 191, 3, 0.3);
-  border-radius: 8px;
+  text-align: center;
+  margin-right: 5px;
+  background: #000000a4;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
   color: #f8bf03;
   font-size: 16px;
-  font-family: 'Impact', sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   cursor: pointer;
-  min-width: 100px;
-  transition: all 0.3s;
+  min-width: 80px;
+  transition: background 0.3s;
+  border: 0.1px solid #f8bf0396;
+
 }
 
 .sec:hover {
-  background: rgba(248, 191, 3, 0.2);
-  transform: translateY(-2px);
+  background: #1a1a1a;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
-  padding: 0 20px 20px;
-  max-width: 100%;
+  gap: 15px;
+  padding: 10px 15px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .main-video {
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 12px;
-  padding: 10px;
-  border: 1px solid rgba(248, 191, 3, 0.2);
-  width: 460px;
+  background: #15151500;
+  border-radius: 5px;
+  padding: 6px;
+  
 }
 
 .main-video video {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 5px;
   aspect-ratio: 16/9;
   background: #000;
 }
-
 .main-video .title {
   color: #fff;
   font-size: 20px;
@@ -251,7 +236,7 @@ input:focus {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 3px) {
   .video-list {
     height: 350px;
   }
