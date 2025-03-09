@@ -67,7 +67,7 @@ function ocultar_buscador(){
     
 }
 
-// Create the offline notification element
+ // Create the offline notification element
 function createOfflineNotification() {
   const notification = document.createElement('div');
   notification.id = 'offline-notification';
@@ -85,8 +85,7 @@ function createOfflineNotification() {
       </svg>
     </div>
     <div class="notification-content">
-      <h3>Sin conexión a Internet</h3>
-      <p>No tienes conexión a Internet. Algunas funciones de la aplicación pueden no estar disponibles.</p>
+      <h2>Sin conexión a Internet</h2>
     </div>
   `;
   
@@ -110,8 +109,7 @@ function createOnlineNotification() {
       </svg>
     </div>
     <div class="notification-content">
-      <h3>Conexión restablecida</h3>
-      <p>Tu conexión a Internet ha sido restablecida. Todas las funciones están disponibles nuevamente.</p>
+      <h2>Conexión restablecida</h2>
     </div>
   `;
   
@@ -154,9 +152,10 @@ function addStyles() {
       flex-shrink: 0;
     }
     
-    .notification-content h3 {
+    .notification-content h2 {
       margin: 0 0 8px 0;
       font-size: 18px;
+       color: rgb(255, 255, 255);
     }
     
     .notification-content p {
@@ -237,6 +236,12 @@ function initConnectionNotifications() {
     clearTimeout(onlineNotificationTimeout);
   });
 }
+
+// Run the initialization when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', initConnectionNotifications);
+
+
+
 
 // Run the initialization when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', initConnectionNotifications);
